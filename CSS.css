@@ -124,7 +124,7 @@ main {
 }
 
 .overview-content {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.8;
@@ -148,7 +148,7 @@ main {
 }
 
 .offerings-container {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -352,7 +352,7 @@ footer a {
    opacity: 0.7;
 }
 
-@media (width: 768px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 36px;
     }
