@@ -1,3 +1,27 @@
+
+.header-branding {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-logo {
+    height: 60px;
+    width: auto;
+    max-width: 120px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .site-logo {
+        height: 36px;
+        max-width: 70px;
+    }
+    .header-branding {
+        gap: 8px;
+    }
+}
 * {
     margin: 0;
     padding: 0;
