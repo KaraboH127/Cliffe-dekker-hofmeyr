@@ -354,53 +354,149 @@ footer a {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 36px;
+        font-size: 28px;
+        padding: 10px 0;
+        margin-left: 5px;
     }
 
     .nav-bar {
-        gap: 20px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
     }
 
     a {
-        font-size: 16px;
+        font-size: 15px;
+        padding: 8px 0;
     }
 
     main {
-        margin-top: 220px;
+        margin-top: 170px;
+        padding: 0 2vw;
     }
 
     .hero-banner {
-        height: 350px;
+        height: 220px;
+        background-size: 80px 80px;
+    }
+
+    .hero-content {
+        width: 95vw;
+        max-width: 98vw;
+        padding: 10px;
     }
 
     .hero-content h2 {
-        font-size: 32px;
+        font-size: 22px;
+        margin-bottom: 10px;
     }
 
     .hero-content p {
-        font-size: 18px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .hero-small {
+        font-size: 12px;
     }
 
     .overview-section,
     .offerings-section,
     .location-section,
     .contact-section {
-        padding: 50px 15px;
+        padding: 30px 5px;
     }
 
     .overview-section h2,
     .offerings-section h2,
     .location-section h2,
     .contact-section h2 {
-        font-size: 28px;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 
-    .contact-info-box {
-        padding: 30px 20px;
+    .overview-content {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .offerings-container {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0;
     }
 
     .offering-card,
     .location-info {
-        padding: 20px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .offering-card h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .offering-card p {
+        font-size: 13px;
+    }
+
+    .location-content {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .location-info h3 {
+        font-size: 16px;
+    }
+
+    .location-info p {
+        font-size: 13px;
+    }
+
+    .contact-info-box {
+        padding: 15px 5px;
+    }
+
+    .contact-info-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .contact-item {
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+    }
+
+    .contact-item h4 {
+        font-size: 14px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+        font-size: 13px;
+    }
+
+    .whatsapp-icon img {
+        width: 28px;
+        height: 28px;
+    }
+
+    footer {
+        padding: 20px 5px;
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+    footer h3 {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    footer p {
+        font-size: 12px;
+        margin-bottom: 6px;
     }
 }
