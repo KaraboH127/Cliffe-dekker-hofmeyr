@@ -395,7 +395,7 @@ footer a {
 }
 
 @keyframes slideleft{
-from {transform: translate(100px);}
+from {transform: translate(100%);}
 }
 
 @media screen and (max-width: 768px) {
