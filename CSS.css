@@ -524,3 +524,19 @@ footer a {
         margin-bottom: 6px;
     }
 }
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
