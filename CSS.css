@@ -129,6 +129,8 @@ main {
     width: 600px;
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+     animation-name: slideleft;
+    animation-duration: 7s;
 }
 
 .hero-content h2 {
@@ -192,6 +194,8 @@ main {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    animation-name: slideleft;
+    animation-duration: 7s;
 }
 
 .offering-card h3 {
@@ -211,6 +215,8 @@ main {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: 10px;
+     animation-name: slideleft;
+    animation-duration: 7s;
 }
 
 .overview-content{
@@ -243,6 +249,8 @@ footer a {
 .location-section {
     padding: 80px 20px;
     background-color: white;
+     animation-name: slideleft;
+    animation-duration: 7s;
 }
 
 .location-section h2 {
@@ -308,6 +316,8 @@ footer a {
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
+     animation-name: slideleft;
+    animation-duration: 7s;
 }
 
 .contact-info-box {
@@ -382,6 +392,10 @@ footer a {
 
 .whatsapp-icon:hover {
    opacity: 0.7;
+}
+
+@keyframes slideleft{
+from {transform: translate(100px);}
 }
 
 @media screen and (max-width: 768px) {
