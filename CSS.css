@@ -51,7 +51,7 @@ hr {
 h1 {
     font-family: 'Arial', sans-serif;
     font-size: 50px;
-    color: blue;
+    color: rgb(15, 0, 127);
     font-style: italic;
     text-align: left;
     padding: 15px 0;
@@ -59,7 +59,7 @@ h1 {
 }
 
 .nav-bar {
-    background-color: blue;
+    background-color: rgb(15, 0, 127);
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -117,7 +117,7 @@ main {
     position: relative;
     z-index: 1;
     padding: 20px;
-    background-color: blue;
+    background-color:  rgb(15, 0, 127);
     width: 600px;
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -142,7 +142,7 @@ main {
 
 .overview-section h2 {
     font-size: 36px;
-    color: blue;
+    color:  rgb(15, 0, 127);
     text-align: center;
     margin-bottom: 40px;
 }
@@ -166,7 +166,7 @@ main {
 
 .offerings-section h2 {
     font-size: 36px;
-    color: blue;
+    color:  rgb(15, 0, 127);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -180,7 +180,7 @@ main {
 }
 
 .offering-card {
-    background-color: blue;
+    background-color:  rgb(15, 0, 127);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -199,7 +199,7 @@ main {
 }
 
 .overview-content{
-    background-color:blue;
+    background-color: rgb(15, 0, 127);
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: 10px;
@@ -210,7 +210,7 @@ main {
 }
 
 footer {
-    background-color: blue;
+    background-color:  rgb(15, 0, 127);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -239,7 +239,7 @@ footer a {
 
 .location-section h2 {
     font-size: 36px;
-    color: blue;
+    color:  rgb(15, 0, 127);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -250,7 +250,7 @@ footer a {
 }
 
 .location-info {
-    background-color: blue;
+    background-color:  rgb(15, 0, 127);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -278,7 +278,7 @@ footer a {
 
 .offerings-category h3 {
     font-size: 28px;
-    color: blue;
+    color:  rgb(15, 0, 127);
     margin-bottom: 30px;
     text-transform: uppercase;
 }
@@ -292,7 +292,7 @@ footer a {
 
 .contact-section h2 {
     font-size: 36px;
-    color:blue;
+    color:  rgb(15, 0, 127);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -303,7 +303,7 @@ footer a {
 }
 
 .contact-info-box {
-    background-color: blue;
+    background-color:  rgb(15, 0, 127);
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
