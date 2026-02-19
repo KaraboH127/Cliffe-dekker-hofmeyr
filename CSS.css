@@ -12,15 +12,7 @@
     object-fit: contain;
 }
 
-@media (max-width: 768px) {
-    .site-logo {
-        height: 36px;
-        max-width: 70px;
-    }
-    .header-branding {
-        gap: 8px;
-    }
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +21,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -92,7 +84,9 @@ main {
     margin-top: 180px;
     padding: 0;
 }
+ 
 
+/* Hero Banner */
 .hero-banner {
     width: 100%;
     height: 500px;
@@ -128,8 +122,7 @@ main {
     width: 600px;
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-     animation-name: slideleft;
-    animation-duration: 7s;
+
 }
 
 .hero-content h2 {
@@ -142,8 +135,13 @@ main {
     font-size: 24px;
     margin-bottom: 30px;
 }
+.hero-content small {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
 
-
+/*Overview section*/
 .overview-section {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -167,7 +165,18 @@ main {
     padding-left: 10px;
 }
 
+.overview-content{
+    background-color: rgb(15, 0, 127);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
 
+.overview-content{
+    color: white;
+}
+
+/*Offerings section*/
 .offerings-section {
     padding: 80px 20px;
     background-color: #ffffff;
@@ -193,8 +202,6 @@ main {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    animation-name: slideleft;
-    animation-duration: 7s;
 }
 
 .offering-card h3 {
@@ -209,20 +216,27 @@ main {
     line-height: 1.6;
 }
 
-.overview-content{
-    background-color: rgb(15, 0, 127);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    padding: 10px;
-     animation-name: slideleft;
-    animation-duration: 7s;
+.offerings-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-.overview-content{
-    color: white;
+.offerings-category h3 {
+    font-size: 28px;
+    color:  rgb(15, 0, 127);
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
+
+
+/*Footer*/
 footer {
+    display: block;
+   clear: both;
     background-color:  rgb(15, 0, 127);
     color: white;
     text-align: center;
@@ -245,11 +259,10 @@ footer a {
     text-decoration: underline;
 }
 
+/*Location section*/
 .location-section {
     padding: 80px 20px;
     background-color: white;
-     animation-name: slideleft;
-    animation-duration: 7s;
 }
 
 .location-section h2 {
@@ -283,22 +296,9 @@ footer a {
     line-height: 1.2;
 }
 
-.offerings-container {
-    width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.offerings-category h3 {
-    font-size: 28px;
-    color:  rgb(15, 0, 127);
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
 
 
+/*Contact Page*/
 .contact-section {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -315,8 +315,6 @@ footer a {
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
-     animation-name: slideleft;
-    animation-duration: 7s;
 }
 
 .contact-info-box {
@@ -396,6 +394,155 @@ footer a {
 @keyframes slideleft{
 from {transform: translate(100%);}
 }
+
+
+/*Leadership Section*/
+.leadership-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.leadership-section h2 {
+    font-size: 36px;
+    color:  rgb(15, 0, 127);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+ .leadership-title {
+    font-size: 24px;
+    color: white;
+    background-color:  rgb(15, 0, 127);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.leadership-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color:  rgb(15, 0, 127);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-bar-links a{
+    display: inline-block;
+    color:  rgb(15, 0, 127);
+    text-decoration: none;
+    margin: 4px;
+}
+.content-one {
+    width: 900px;
+    margin-bottom: 100px;
+}
+.content-one p{
+    margin-left: 30%;
+    font-size: 22px;
+    color: rgba(9, 9, 126, 0.836);
+}
+
+.aside-content{
+    width: 40%;
+    float: left;
+    margin-top: 100px;
+}
+
+.aside-content h2{
+    margin-left: 10%;
+    font-size: 35px;
+    color: rgb(15, 0, 127);
+}
+
+.section-content{
+    width: 60%;
+    float: right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.section-content p{
+    font-size: 35px;
+    color: rgb(15, 0, 127);
+}
+.section-content h1{
+    padding-left: 20px;
+    font-size: 50px;
+    padding-top: 170px;
+    color: rgb(15, 0, 127);
+}
+.section-content h4{
+    padding-left: 150px;
+    font-size: 15px;
+    color: grey;
+}
+
+.section-content li, small{
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+    line-height: 40px;
+}
+ 
+.lawyers-section{
+   display: block;
+   clear: both;
+   width: 40%;
+   height: 850px;
+   background-color: rgb(242, 250, 255);
+   text-align: center;
+   border-radius: 8px;
+   float: left;
+}
+
+.lawyers-section h3{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: rgb(15, 0, 127);
+}
+
+.lawyers-section img{
+    width: 220px;
+    border-radius: 8px;
+}
+.lawyers-section a{
+    display: block;
+    color:  rgb(0, 0, 0);
+    margin: none;
+}
+
+.lawyers-section .lawyers-title{
+    padding-top: 30px;
+}
+
+.lawyers-section p{
+    font-size: 20px;
+    color:  rgb(15, 0, 127);
+}
+
+.fa-brands.fa-linkedin-in{
+    color:  white;
+    display: block;
+    margin-left: 46%;
+}
+    
+
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -546,56 +693,12 @@ from {transform: translate(100%);}
         margin-bottom: 6px;
     }
 }
-
-@media (max-width: 600px) {
-    nav a {
-        display: block;
+@media (max-width: 768px) {
+    .site-logo {
+        height: 36px;
+        max-width: 70px;
     }
-}
-
-img {
-    max-width: 100%;
-    height: auto
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-.leadership-section {
-    padding: 80px 20px;
-    background-color: #ffffff;
-}
-
-.leadership-section h2 {
-    font-size: 36px;
-    color:  rgb(15, 0, 127);
-    text-align: center;
-    margin-bottom: 50px;
-}
-
- .leadership-title {
-    font-size: 24px;
-    color: white;
-    background-color:  rgb(15, 0, 127);
-    text-align: center;
-    margin-bottom: 50px;
-}
-.leadership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.leadership-card {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white;
-    background-color:  rgb(15, 0, 127);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    .header-branding {
+        gap: 8px;
+    }
 }
