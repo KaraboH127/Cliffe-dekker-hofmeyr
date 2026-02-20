@@ -442,7 +442,9 @@ body {
     padding: 0;
 }
 
-
+.services-body{
+    background-color: rgb(242, 250, 255);
+}
 .nav-bar-links a{
     display: inline-block;
     color:  rgb(15, 0, 127);
@@ -542,7 +544,7 @@ body {
 }
     
 .lawyers-body{
-    background-color: rgb(230, 245, 253);
+    background-color: rgb(243, 251, 255);
 }
 
 .profile-container{
