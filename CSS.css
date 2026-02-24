@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     width: 100%;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .nav-bar {
-    background-color: rgb(15, 0, 127);
+    background-color: rgba(15, 0, 127);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,11 +117,12 @@ main {
     position: relative;
     z-index: 1;
     padding: 20px;
-    background-color:  rgb(15, 0, 127);
+    background-color:  rgba(15, 0, 127, 0.756);
     width: 600px;
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .hero-content h2 {
@@ -382,7 +383,7 @@ footer a {
 }
 .whatsapp-icon img{
     width: 40px;
-    border-radius: 90%;
+    border-radius: 100%;
 }
 
 .whatsapp-icon:hover {
@@ -506,7 +507,7 @@ body {
    clear: both;
    width: 40%;
    height: 850px;
-   background-color: rgb(242, 250, 255);
+   background-color: rgb(189, 228, 252);
    text-align: center;
    border-radius: 8px;
    float: left;
@@ -539,12 +540,12 @@ body {
 
 .fa-brands.fa-linkedin-in{
     color:  white;
-    display: block;
-    margin-left: 46%;
+    display: inline-block;
+    margin-left: 10px;
 }
     
 .lawyers-body{
-    background-color: rgb(243, 251, 255);
+    background-color: rgba(0, 36, 119, 0.2);
 }
 
 .profile-container{
@@ -561,10 +562,12 @@ body {
 }
 .profile-details h1{
     margin-bottom: 0.2em;
+    font-size: 80px;
 }
 .profile-details h4{
     margin-top: 0;
     color: rgb(15, 0, 120);
+    font-size: 30px;
 }
 .profile-details p{
     margin: 1em 0 1.5em 0; 
@@ -602,6 +605,7 @@ body {
 }
 .profile-about h2{
      color:  rgb(15, 0, 127);
+     font-size: 30px;
 }
 .profile-about p{
     color: grey;
@@ -614,6 +618,7 @@ body {
 .profile-expertise h3{
     margin-bottom: 0.5em;
     color: rgb(15, 0, 127);
+    font-size: 30px;
 }
 .profile-expertise ul{
     columns: 2; 
@@ -627,9 +632,11 @@ body {
 .profile-experience{
     margin-top: 40px;
     margin-left: 25px;
+
 }
 .profile-experience h2{
     color: rgb(15, 0, 127);
+    font-size: 30px;
 }
 
 .profile-experience h3{
@@ -637,7 +644,7 @@ body {
 }
 .profile-experience ul{
     max-width: 700px;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 .profile-experience li{
     color: grey;
@@ -649,6 +656,7 @@ body {
 }
 .profile-credentials h2{
     color: rgb(15, 0, 127);
+    font-size: 30px;
 }
 .profile-credentials h3{
     margin-bottom: 0.5em;
@@ -669,6 +677,7 @@ body {
 }
 .education-container h4{
     color:  rgb(15, 0, 127);
+    font-size: 20px;
 }
 .languages-container{
     flex: 1 1 200px; 
@@ -676,6 +685,7 @@ body {
 }
 .languages-container h4{
     color:  rgb(15, 0, 127);
+    font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -687,7 +697,7 @@ body {
 
     .nav-bar {
         gap: 10px;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 10px 0;
         font-size: 14px;
@@ -706,6 +716,9 @@ body {
     .hero-banner {
         height: 220px;
         background-size: 80px 80px;
+    }
+    .hero-banner img{
+        width: 100%;
     }
 
     .hero-content {
