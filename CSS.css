@@ -141,21 +141,268 @@ main {
     color: white;
 }
 
+.home-section {
+    padding: 80px 20px;
+    background-color:rgb(15, 0, 127);
+    min-height: calc(100vh - 180px - 200px);
+}
+.home-content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.home-content button{
+    background-color: #fff;
+    color: rgb(15, 0, 127);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+.home-content button:hover{
+    background-color: rgb(15, 0, 127);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.home-content h2{
+    font-size: 55px;
+    color:  #f9f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home-content p{
+    color: #f9f9f9;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.featured-services {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 180px - 200px);
+}
+.featured-services h2{
+    font-size: 55px;
+    color:  rgb(15, 0, 127);
+    text-align: center;
+    margin-bottom: 20px;
+    animation-name: slideleft;
+    animation-duration: 8s;
+}
+.featured-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.featured-card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 400px;
+}
+.featured-card img{
+    max-width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.featured-card h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(15, 0, 127);
+}
+
+
 /*Overview section*/
 .overview-section {
+    padding: 80px 20px;
+    background-color: rgb(15, 0, 127);
+    margin-bottom: 10px;
+}
+
+.overview-section h2 {
+    font-size: 55px;
+    color:  #f9f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.overview-section p{
+    color: #f9f9f9;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.overview-section-two {
     padding: 80px 20px;
     background-color: #f9f9f9;
 }
 
-.overview-section h2 {
-    font-size: 36px;
+.overview-section-two h2{
+    font-size: 55px;
     color:  rgb(15, 0, 127);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.overview-section-two span{
+    color: rgb(143, 129, 255);
+}
+.overview-content-two p{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.8;
+    color:rgb(15, 0, 127);
 }
 
+.overview-section-three{
+    padding: 80px 20px;
+    background-color: rgb(15, 0, 127);
+    margin-bottom: 10px;
+}
+.overview-section-three h2{
+    font-size: 55px;
+    color:  #f9f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.overview-section-three p{
+    color: #f9f9f9;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.overview-section-four{
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+.overview-section-four h2{
+    font-size: 55px;
+    color:  rgb(15, 0, 127);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.values-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.values-card{
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(15, 0, 127);
+}
+.values-card h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(15, 0, 127);
+}
+.values-card i{
+    font-size: 90px;
+    margin-bottom: 20px;
+    color: rgb(15, 0, 127);
+}
+
+.overview-section-five{
+    padding: 80px 20px;
+    background-color: rgb(15, 0, 127);
+    margin-bottom: 10px;
+}
+.overview-section-five h2{
+    font-size: 55px;
+    color:  #f9f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-card{
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(15, 0, 127);
+    width: auto;
+    margin: 0;
+}
+.service-card img{
+    width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.services-card h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(15, 0, 127);
+}
+
+.overview-section-six{
+    padding: 80px 20px;
+    background-color: rgb(51, 34, 178);
+    margin-bottom: 10px;
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.overview-section-six h2{
+    font-size: 55px;
+    color:  rgb(15, 0, 127);
+    text-align: center;
+}
+.overview-section-six span{
+    color: rgb(143, 129, 255);
+}
+.overview-section-six button{
+    background-color: white;
+    color: rgb(15, 0, 127);
+    padding: 10px 20px;
+    border: 1px solid rgb(15, 0, 127);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    transition: 0.15s ease-in-out;
+}
+.overview-section-six button:hover{
+    background-color: rgb(15, 0, 127);
+    color: white;
+}
+.overview-section-six button:active{
+    background-color: white;
+    color: rgb(15, 0, 127);
+}
+
+
 .overview-content {
-    max-width: 1000px;
+    max-width: 4000px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.8;
@@ -369,6 +616,13 @@ footer a {
     text-decoration: underline;
 }
 
+/* contact form checkbox alignment */
+.checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
 .whatsapp-icon {
     display: inline-flex;
@@ -400,6 +654,9 @@ from {transform: translate(100%);}
 .leadership-section {
     padding: 80px 20px;
     background-color: #ffffff;
+}
+.leadership-section span{
+    color: rgb(123, 145, 247);
 }
 
 .leadership-section h2 {
@@ -688,164 +945,58 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-        padding: 10px 0;
-        margin-left: 5px;
-    }
-
-    .nav-bar {
-        gap: 10px;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px 0;
-        font-size: 14px;
-    }
-
-    a {
-        font-size: 15px;
-        padding: 8px 0;
-    }
-
-    main {
-        margin-top: 170px;
-        padding: 0 2vw;
-    }
-
-    .hero-banner {
-        height: 220px;
-        background-size: 80px 80px;
-    }
-    .hero-banner img{
-        width: 100%;
-    }
-
-    .hero-content {
-        width: 95vw;
-        max-width: 98vw;
-        padding: 10px;
-    }
-
-    .hero-content h2 {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .hero-small {
-        font-size: 12px;
-    }
-
-    .overview-section,
-    .offerings-section,
-    .location-section,
-    .contact-section {
-        padding: 30px 5px;
-    }
-
-    .overview-section h2,
-    .offerings-section h2,
-    .location-section h2,
-    .contact-section h2 {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .overview-content {
-        font-size: 14px;
-        padding: 6px;
-    }
-
-    .offerings-container {
-        width: 100vw;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 0;
-    }
-
-    .offering-card,
-    .location-info {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .offering-card h3 {
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-
-    .offering-card p {
-        font-size: 13px;
-    }
-
-    .location-content {
-        width: 95vw;
-        margin: 0 auto;
-    }
-
-    .location-info h3 {
-        font-size: 16px;
-    }
-
-    .location-info p {
-        font-size: 13px;
-    }
-
-    .contact-info-box {
-        padding: 15px 5px;
-    }
-
-    .contact-info-box h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .contact-item {
-        margin-bottom: 18px;
-        padding-bottom: 10px;
-    }
-
-    .contact-item h4 {
-        font-size: 14px;
-    }
-
-    .contact-item p,
-    .contact-item a {
-        font-size: 13px;
-    }
-
-    .whatsapp-icon img {
-        width: 28px;
-        height: 28px;
-    }
-
-    footer {
-        padding: 20px 5px;
-        font-size: 13px;
-        margin-top: 30px;
-    }
-
-    footer h3 {
-        font-size: 15px;
-        margin-bottom: 8px;
-    }
-
-    footer p {
-        font-size: 12px;
-        margin-bottom: 6px;
-    }
+.contact-form-section{
+    margin-top: 40px;
+    background-color: rgb(15, 0, 127);
+    padding: 20px;
 }
-@media (max-width: 768px) {
-    .site-logo {
-        height: 36px;
-        max-width: 70px;
-    }
-    .header-branding {
-        gap: 8px;
-    }
+.contact-form-section h2{
+    color: white;
+    font-size: 30px;
+}
+.contact-form{
+    max-width: 700px;
+    margin-left: 18px;
+}
+.contact-form label{
+    display: block;
+    margin-bottom: 0.5em;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.5em;
+}
+.contact-form-section{
+    color: white;
+}
+.contact-form button{
+    background-color: white;
+    color: rgb(15, 0, 127);
+    padding: 10px 20px;
+    border: 1px solid rgb(15, 0, 127);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    transition: 0.15s ease-in-out;
+    margin-top: 10px;
+}
+
+.contact-form button:hover{
+    background-color: rgb(15, 0, 127);
+    color: white;
+    border: solid 1px white;
+}
+.contact-form button:active{
+    background-color: white;
+    color:  rgb(15, 0, 127);
+    border: solid 1px white;
 }
