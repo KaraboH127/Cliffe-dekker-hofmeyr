@@ -1000,3 +1000,63 @@ body {
     color:  rgb(15, 0, 127);
     border: solid 1px white;
 }
+
+/* broad mobile responsiveness to avoid breaks on phones */
+@media screen and (max-width: 768px) {
+    /* stack header items and shrink text */
+    .header-branding { 
+        flex-direction: row; 
+        align-items: flex-start;
+         gap: 8px; 
+    }
+    .header-title {
+         font-size: 24px; 
+    }
+    .nav-bar { 
+        flex-direction: row; 
+        gap: 8px; 
+        font-size: 16px;
+     }
+    .nav-bar a { 
+        padding: 8px 0; 
+    }
+    main { 
+        margin-top: 150px; 
+        padding: 0 10px; 
+    }
+    .overview-section, .overview-section-two, .overview-section-three, .overview-section-four, .overview-section-five, .offerings-section, .location-section, .contact-section, .contact-form-section { 
+        padding: 40px 10px; 
+    }
+    .profile-container { 
+        flex-direction: column; 
+        margin-left: 0; 
+    }
+    .profile-about, .profile-credentials, .profile-expertise, .profile-experience { 
+        width: 100%; 
+        margin-left: 0; 
+    }
+    .services-container { 
+        grid-template-columns: 1fr; 
+    }
+    .service-card img { 
+        max-width: 100%; 
+        height: auto; 
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+    .profile-container { flex-direction: column; margin-left: 0; }
+    .profile-about, .profile-credentials, .profile-expertise, .profile-experience { width: 100%; margin-left: 0; }
+    .values-grid, .services-container, .leadership-grid { grid-template-columns: 1fr; }
+    .service-card img, .profile-image img, img { max-width: 100%; height: auto; }
+    .contact-form input, .contact-form textarea { width: 100%; }
+}
+
+@media screen and (max-width: 480px) {
+    /* tighter adjustments for small phones */
+    body, html { overflow-x: hidden; }
+    h1 { font-size: 24px; }
+    .overview-section h2, .overview-section-two h2, .overview-section-three h2, .overview-section-four h2, .overview-section-five h2, .offerings-section h2, .location-section h2, .contact-section h2, .contact-form-section h2 { font-size: 24px; }
+    .profile-details h1 { font-size: 48px; }
+    .profile-details h4 { font-size: 24px; }
+}
