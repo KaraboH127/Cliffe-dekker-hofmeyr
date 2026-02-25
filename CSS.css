@@ -1124,3 +1124,25 @@ body {
     .header-branding { flex-direction:row; }
     .nav-bar { flex-direction:row; }
     }
+    @media screen and (max-width: 768px) {
+  .content-one, .section-content, .aside-content {
+    width: 100% !important;
+    margin: 0 !important;
+    float: none !important;
+    padding: 0 5px !important;
+    box-sizing: border-box;
+  }
+  .content-one p, .section-content p, .section-content h1, .section-content h4 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    font-size: 18px !important;
+    text-align: left !important;
+    word-break: break-word;
+  }
+  .lawyers-section {
+    width: 100% !important;
+    float: none !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+  }
+}
