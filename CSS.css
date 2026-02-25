@@ -1003,9 +1003,11 @@ body {
 
 /* broad mobile responsiveness to avoid breaks on phones */
 @media screen and (max-width: 768px) {
+    /* prevent horizontal scrolling */
+    body, html { overflow-x: hidden; }
     /* stack header items and shrink text */
     .header-branding { 
-        flex-direction: row; 
+        flex-direction: column; 
         align-items: flex-start;
          gap: 8px; 
     }
@@ -1013,7 +1015,7 @@ body {
          font-size: 24px; 
     }
     .nav-bar { 
-        flex-direction: row; 
+        flex-direction: column; 
         gap: 8px; 
         font-size: 16px;
      }
@@ -1048,8 +1050,39 @@ body {
     .profile-container { flex-direction: column; margin-left: 0; }
     .profile-about, .profile-credentials, .profile-expertise, .profile-experience { width: 100%; margin-left: 0; }
     .values-grid, .services-container, .leadership-grid { grid-template-columns: 1fr; }
+    /* override fixed widths that cause horizontal breakage */
+    .hero-content,
+    .home-content,
+    .home-content p,
+    .featured-card,
+    .overview-section p,
+    .overview-content-two p,
+    .overview-section-three p,
+    .overview-section-six,
+    .featured-services {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .featured-cards { grid-template-columns: 1fr !important; }
     .service-card img, .profile-image img, img { max-width: 100%; height: auto; }
     .contact-form input, .contact-form textarea { width: 100%; }
+    /* inside @media (max-width:768px) and (max-width:480px) */
+    .hero-content,
+    .home-content,
+    .home-content p,
+    .featured-card,
+    .overview-section p,
+    .overview-content-two p,
+    .overview-section-three p,
+    .overview-section-six,
+    .featured-services {
+        width:100% !important;
+        max-width:100% !important;
+    }
+    .featured-cards { grid-template-columns:1fr !important; }
+    body, html { overflow-x:hidden; }
+    .header-branding { flex-direction:column; }
+    .nav-bar { flex-direction:column; }
 }
 
 @media screen and (max-width: 480px) {
@@ -1059,4 +1092,35 @@ body {
     .overview-section h2, .overview-section-two h2, .overview-section-three h2, .overview-section-four h2, .overview-section-five h2, .offerings-section h2, .location-section h2, .contact-section h2, .contact-form-section h2 { font-size: 24px; }
     .profile-details h1 { font-size: 48px; }
     .profile-details h4 { font-size: 24px; }
-}
+    /* ensure wide elements also shrink */
+    .hero-content,
+    .home-content,
+    .home-content p,
+    .featured-card,
+    .overview-section p,
+    .overview-content-two p,
+    .overview-section-three p,
+    .overview-section-six,
+    .featured-services {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .featured-cards { grid-template-columns: 1fr !important; }
+    /* inside @media (max-width:768px) and (max-width:480px) */
+    .hero-content,
+    .home-content,
+    .home-content p,
+    .featured-card,
+    .overview-section p,
+    .overview-content-two p,
+    .overview-section-three p,
+    .overview-section-six,
+    .featured-services {
+        width:100% !important;
+        max-width:100% !important;
+    }
+    .featured-cards { grid-template-columns:1fr !important; }
+    body, html { overflow-x:hidden; }
+    .header-branding { flex-direction:column; }
+    .nav-bar { flex-direction:column; }
+    }
