@@ -396,7 +396,6 @@ main {
     flex-wrap: wrap;
 }
 
-.btn-primary,
 .btn-secondary {
     padding: 15px 40px;
     border-radius: 5px;
@@ -409,17 +408,6 @@ main {
     font-size: 14px;
 }
 
-.btn-primary {
-    background: white;
-    color:  rgb(15, 0, 127);
-}
-
-.btn-primary:hover {
-    background:  rgb(15, 0, 127);
-    color: white;
-    border: 1px solid white;
-}
-
 .btn-secondary {
    background: white;
     color:  rgb(15, 0, 127);
@@ -429,6 +417,7 @@ main {
     background:  rgb(15, 0, 127);
     color: white;
     border: 1px solid white;
+    transform: translateY(-8px);
 }
 
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Karabo Hlabangane">
+        <meta name="description" content="Professional services signup page">
+        <link rel="icon" href="../images/Favicon.png" type="image/png">
+        <link rel="stylesheet" href="newsletter-signup.css">
+        <script src="https://kit.fontawesome.com/66a555d40f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sign up for our newsletter</h1>
+            <p>Sign up to receive the latest news and updates from Cliffe Dekker Hofmeyr.</p>
+            <form onsubmit="handleSubmit(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <a><button type="submit">Subscribe</button></a>
+            </form>
+        </div>
+
+        <script>
+            function handleSubmit(event) {
+                event.preventDefault();
+                alert("Thank you for subscribing to our newsletter!");
+                window.location.href = "../index.html";
+            }
+        </script>
+    </body>
+</html>
