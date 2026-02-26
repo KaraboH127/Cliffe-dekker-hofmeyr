@@ -1143,7 +1143,7 @@ section small{
 }
 .contact-form{
     max-width: 700px;
-    margin-left: 18px;
+    margin: 0 auto;
 }
 .contact-form label{
     display: block;
