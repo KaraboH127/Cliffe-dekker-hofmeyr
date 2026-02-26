@@ -1140,6 +1140,8 @@ section small{
 .contact-form-section h2{
     color: white;
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 .contact-form{
     max-width: 700px;
