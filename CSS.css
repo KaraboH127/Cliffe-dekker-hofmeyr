@@ -899,60 +899,46 @@ img {
 body {
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
-.services-body{
-    background-color: rgb(242, 250, 255);
-}
+
 .nav-bar-links a{
     display: inline-block;
     color:  rgb(15, 0, 127);
     text-decoration: none;
     margin: 4px;
 }
+.div-one h1{
+    text-decoration: underline;
+}
 .content-one {
     width: 900px;
-    margin-bottom: 100px;
+    margin-bottom: 35px;
 }
 .content-one p{
-    margin-left: 30%;
+    margin-left: 35px;
     font-size: 22px;
-    color: rgba(9, 9, 126, 0.836);
+    color: grey;
 }
 
-.aside-content{
-    width: 40%;
-    float: left;
-    margin-top: 100px;
-}
-
-.aside-content h2{
-    margin-left: 10%;
-    font-size: 35px;
-    color: rgb(15, 0, 127);
-}
-
-.section-content{
-    width: 60%;
-    float: right;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.section-content li{
+    margin-left: 50px;
 }
 .section-content p{
     font-size: 35px;
     color: rgb(15, 0, 127);
 }
+
+section small{
+    margin-left: 25px;
+}
 .section-content h1{
-    padding-left: 20px;
-    font-size: 50px;
-    padding-top: 170px;
+    font-size: 50px;;
     color: rgb(15, 0, 127);
+    text-decoration: underline;
 }
-.section-content h4{
-    padding-left: 150px;
-    font-size: 15px;
-    color: grey;
-}
+
 
 .section-content li, small{
     color: rgb(61, 61, 61);
@@ -961,29 +947,29 @@ body {
 }
  
 .lawyers-section{
-   display: block;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   grid-row: 1fr 1fr 1fr;
    clear: both;
-   width: 40%;
-   height: 850px;
-   background-color: rgb(189, 228, 252);
+   height: auto;
    text-align: center;
-   border-radius: 8px;
-   float: left;
 }
-
-.lawyers-section h3{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    color: rgb(15, 0, 127);
+.lawyers-section div{
+    padding: 50px;
+    margin: 10px;
 }
 
 .lawyers-section img{
     width: 220px;
     border-radius: 8px;
 }
+.lawyers-section h2{
+    color: rgb(15, 0, 127);
+}
 .lawyers-section a{
     display: block;
-    color:  rgb(0, 0, 0);
+    color: rgb(15, 0, 127);
     margin: none;
 }
 
@@ -993,7 +979,7 @@ body {
 
 .lawyers-section p{
     font-size: 20px;
-    color:  rgb(15, 0, 127);
+    color: rgb(15, 0, 127);
 }
 
 .fa-brands.fa-linkedin-in{
