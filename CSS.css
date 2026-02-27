@@ -783,6 +783,11 @@ footer a {
     padding-bottom: 25px;
     border-bottom: 1px solid #eee;
 }
+.contact-item iframe{
+     width: 600px;
+    height:450px; 
+    border:0;
+}
 
 .contact-item:last-child {
     border-bottom: none;
