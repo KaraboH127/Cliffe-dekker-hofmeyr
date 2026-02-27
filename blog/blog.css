@@ -1,0 +1,169 @@
+/* PAGE HEADER */
+.page-header {
+    background-color: rgb(15, 0, 127);
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.page-header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* BLOG FILTERS */
+.blog-filters-section {
+    background: white;
+    padding: 40px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 40px;
+}
+
+.filters-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters-container h3 {
+    margin-bottom: 20px;
+    color: #1a3a52;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.filter-btn:hover {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.filter-btn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* BLOG FULL GRID SECTION */
+.blog-full-grid-section {
+    padding: 0 40px 60px 40px;
+}
+
+.blog-full-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-full-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter-section {
+    background-color: rgb(15, 0, 127);
+    color: white;
+    padding: 60px 40px;
+    margin-top: 80px;
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-container h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.newsletter-container > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 15px 40px;
+    background: white;
+    color: rgb(15, 0, 127);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-note {
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 50px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .blog-filters-section,
+    .blog-full-grid-section {
+        padding: 30px 20px;
+    }
+
+    .blog-full-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}

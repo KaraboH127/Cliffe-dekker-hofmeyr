@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawyers - Cliffe Dekker Hofmeyr</title>
-     <link rel="icon" href="images/Favicon.png" type="image/png">
-    <link rel="stylesheet" href="CSS.css">
+     <link rel="icon" href="../images/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="../CSS.css">
+    <link rel="stylesheet" href="../blog/blog.css">
     <script src="https://kit.fontawesome.com/66a555d40f.js" crossorigin="anonymous"></script>
 </head>
 <body>
          <header>
                 <hr>
                 <div class="header-branding">
-                <img src="images/CDH-favicon.webp" alt="Cliffe Dekker Hofmeyr Logo" class="site-logo" />
+                <img src="../images/CDH-favicon.webp" alt="Cliffe Dekker Hofmeyr Logo" class="site-logo" />
                 <h1 class="header-title">Cliffe Dekker Hofmeyr</h1>
             </div>
                 <div class="header-flex">
@@ -22,6 +23,7 @@
                         <a href="About.html">About</a>
                         <a href="Services.html">Services</a>
                         <a href="firm-leadership.html">Lawyers</a>
+                        <a href="../blog/blog.html" class="active">Articles</a>
                         <a href="contact.html">Contact</a>
                         
                     </nav>
@@ -32,15 +34,26 @@
              <section class="leadership-section">
                  <h2>Meet Our <span>Expert</span> Lawyers</h2>
 
-                 <div class="leadership-header">
-                    <p class="leadership-title">All Profiles</p>
+        <section class="blog-filters-section">
+            <div class="filters-container">
+                <h3>Filter by Category</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Lawyers</button>
+                    <button class="filter-btn" data-filter="corporate">Corporate & Commercial Law</button>
+                    <button class="filter-btn" data-filter="employment">Employment Law</button>
+                    <!--<button  class="filter-btn" data-filter="environmental">Environmental Law</button>-->
+                    <!--<button class="filter-btn" data-filter="competition">Competition Law</button>-->
+                    <!-- <button class="filter-btn" data-filter="Banking">Banking, Finance & Projects</button>-->
+                    <button class="filter-btn" data-filter="Dispute">Dispute Resolution</button>
+                    <button class="filter-btn" data-filter="Trust">Trust & Estate Law</button>
                 </div>
+            </div>
+        </section>
 
                  <div class="leadership-grid">
-
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/imraan-abdullah.html">
-                            <img src="images/Imraan-Abdullah.jpg" alt="Leader 1">
+                     <div class="leadership-card" id="1">
+                        <a href="../pages-lawyers/imraan-abdullah.html">
+                            <img src="../images/Imraan-Abdullah.jpg" alt="Leader 1">
                             <h3>Imraan Abdullah</h3>
                         </a>
                          <p>Director</p>
@@ -49,9 +62,9 @@
                         <a href="https://www.linkedin.com/in/imraan-abdullah-aa0a00169/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                         <a href="pages-lawyers/muzammil-ahmed.html">
-                            <img src="images/Muzammil-Ahmed.jpg" alt="Leader 2">
+                     <div class="leadership-card" id="2">
+                         <a href="../pages-lawyers/muzammil-ahmed.html">
+                            <img src="../images/Muzammil-Ahmed.jpg" alt="Leader 2">
                             <h3>Muzammil Ahmed</h3>
                          </a>
                          <p>Associate</p>
@@ -60,9 +73,9 @@
                         <a href="https://za.linkedin.com/in/muzammil-ahmed-20b6b615a" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                         <a href="pages-lawyers/shameegh-allen.html">
-                            <img src="images/Shameegh-Allen.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="2">
+                         <a href="../pages-lawyers/shameegh-allen.html">
+                            <img src="../images/Shameegh-Allen.jpg" alt="Leader 3">
                             <h3>Shameegh Allen</h3>
                          </a>
                          <p>Director</p>
@@ -71,9 +84,9 @@
                          <a href="https://za.linkedin.com/in/shameegh-allen-7b020873" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/tim-fletcher.html">
-                            <img src="images/Tim-Fletcher.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="1">
+                        <a href="../pages-lawyers/tim-fletcher.html">
+                            <img src="../images/Tim-Fletcher.jpg" alt="Leader 3">
                             <h3>Tim Fletcher</h3>
                         </a>
                          <p>Chairperson, Director</p>
@@ -82,9 +95,9 @@
                         <a href="https://za.linkedin.com/in/tim-fletcher-cdh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/brent-williams.html">
-                            <img src="images/Brent-Williams-02.jpeg" alt="Leader 3">
+                     <div class="leadership-card" id="2">
+                        <a href="../pages-lawyers/brent-williams.html">
+                            <img src="../images/Brent-Williams-02.jpeg" alt="Leader 3">
                             <h3>Brent Williams</h3>
                         </a>
                          <p>Cheif Executive Officer, Director</p>
@@ -93,9 +106,9 @@
                          <a href="https://za.linkedin.com/in/brent-williams-47b64738" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                         <a href="pages-lawyers/nuhaa-amardien.html">
-                            <img src="images/Nuhaa-Amardien.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="2">
+                         <a href="../pages-lawyers/nuhaa-amardien.html">
+                            <img src="../images/Nuhaa-Amardien.jpg" alt="Leader 3">
                             <h3>Nuhaa Amardien</h3>
                          </a>
                          <p>Counsel</p>
@@ -104,9 +117,9 @@
                         <a href="https://za.linkedin.com/in/nuhaa-amardien-a07432110" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/loyiso-bavuma.html">
-                            <img src="images/Loyiso-Bavuma.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="1">
+                        <a href="../pages-lawyers/loyiso-bavuma.html">
+                            <img src="../images/Loyiso-Bavuma.jpg" alt="Leader 3">
                             <h3>Loyiso Bavuma</h3>
                         </a>
                          <p>Senior Associate</p>
@@ -115,9 +128,9 @@
                          <a href="https://za.linkedin.com/in/loyiso-bavuma-a075b9136" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/iva-babayi.html">
-                            <img src="images/Iva-Babayi.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="1">
+                        <a href="../pages-lawyers/iva-babayi.html">
+                            <img src="../images/Iva-Babayi.jpg" alt="Leader 3">
                             <h3>Iva Babayi</h3>
                         </a>
                          <p>Associate</p>
@@ -126,9 +139,9 @@
                          <a href="https://za.linkedin.com/in/iva-babayi-7a3785243" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                         <a href="pages-lawyers/alysa-bunting.html">
-                            <img src="images/Alysa-Bunting.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="2">
+                         <a href="../pages-lawyers/alysa-bunting.html">
+                            <img src="../images/Alysa-Bunting.jpg" alt="Leader 3">
                             <h3>Alysa Bunting</h3>
                          </a>
                          <p>Associate Designate</p>
@@ -137,9 +150,9 @@
                         <a href="https://za.linkedin.com/in/alysa-bunting-89b39325b" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/carmin-botha.html">
-                            <img src="images/Carmin-Jansen-van-Vuuren.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="2">
+                        <a href="../pages-lawyers/carmin-botha.html">
+                            <img src="../images/Carmin-Jansen-van-Vuuren.jpg" alt="Leader 3">
                              <h3>Carmin Botha</h3>
                         </a>
                          <p>Associate</p>
@@ -149,8 +162,8 @@
                      </div>
 
                      <div class="leadership-card">
-                        <a href="pages-lawyers/gavriel-bender.html">
-                            <img src="images/Gavriel-Bender.jpg" alt="Leader 3">
+                        <a href="../pages-lawyers/gavriel-bender.html">
+                            <img src="../images/Gavriel-Bender.jpg" alt="Leader 3">
                             <h3>Gavriel Bender</h3>
                         </a>
                          <p>Candidate Attorney</p>
@@ -159,8 +172,8 @@
                      </div>
 
                      <div class="leadership-card">
-                        <a href="pages-lawyers/eskal-burger.html">
-                            <img src="images/Eskal-Burger.jpg" alt="Leader 3">
+                        <a href="../pages-lawyers/eskal-burger.html">
+                            <img src="../images/Eskal-Burger.jpg" alt="Leader 3">
                             <h3>Eskal Burger</h3>
                         </a>
                          <p>Chief Financial Officer</p>
@@ -168,9 +181,9 @@
                          <a href="https://za.linkedin.com/in/eskal-burger-5aa44131" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/phetheni-nkuna.html">
-                            <img src="images/Phetheni-Nkuna.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="5">
+                        <a href="../pages-lawyers/phetheni-nkuna.html">
+                            <img src="../images/Phetheni-Nkuna.jpg" alt="Leader 3">
                             <h3>Phetheni Nkuna</h3>
                         </a>
                         <p>Director: Executive Management</p>
@@ -179,9 +192,9 @@
                          <a href="https://za.linkedin.com/in/phetheni-nkuna-1539643b" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/gretchen-barbosa.html">
-                            <img src="images/Gretchen-Barkhuizen-Barbosa.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="6">
+                        <a href="../pages-lawyers/gretchen-barbosa.html">
+                            <img src="../images/Gretchen-Barkhuizen-Barbosa.jpg" alt="Leader 3">
                             <h3>Gretchen Barkhuizen-Barbosa</h3>
                         </a>
                          <p>Practice Head, Director</p>
@@ -190,9 +203,9 @@
                          <a href="https://za.linkedin.com/in/gretchen-barkhuizen-barbosa-66b5706b" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                      </div>
 
-                     <div class="leadership-card">
-                        <a href="pages-lawyers/sammy-ndolo.html">
-                            <img src="images/Sammy-Ndolo.jpg" alt="Leader 3">
+                     <div class="leadership-card" id="2">
+                        <a href="../pages-lawyers/sammy-ndolo.html">
+                            <img src="../images/Sammy-Ndolo.jpg" alt="Leader 3">
                             <h3>Sammy Ndolo</h3>
                         </a>
                          <p>Kenya Managing Partner, Partner</p>
@@ -212,7 +225,8 @@
                 <a href="index.html">Home</a> |
                 <a href="About.html">About</a> |
                 <a href="Services.html">Services</a> |
-                 <a href="firm-leadership.html">Firm Leadership</a> |
+                 <a href="firm-leadership.html">Lawyers</a> |
+                   <a href="blog.html" class="active">Articles</a> |
                 <a href="contact.html">Contact</a>
             </div>
             <div class="footer-legal">
@@ -224,6 +238,6 @@
                 <a href="https://za.linkedin.com/company/cliffe-dekker-hofmeyr" target="_blank noopener"><i class="fa-brands fa-square-linkedin"></i></a>
                 <a href="https://www.facebook.com/CDHLegal/" target="_blank noopener" ><i class="fa-brands fa-square-facebook"></i></a>
         </footer>
-
+         <script src="lawyers.js"></script>          
 </body>
 </html>
