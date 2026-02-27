@@ -10,7 +10,7 @@
     position: relative;
     height: auto;
     background: linear-gradient(135deg, rgba(15, 0, 127, 0.9) 0%, rgba(15, 0, 127, 0.7) 100%),
-                url('../images/hero-background.jpg') center/cover;
+                url('../images/articles-p1.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
