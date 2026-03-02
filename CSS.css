@@ -783,7 +783,7 @@ footer a {
     padding-bottom: 25px;
     border-bottom: 1px solid #eee;
 }
-.contact-item iframe{
+.contact-container iframe{
      width: 600px;
     height:450px; 
     border:0;
@@ -914,9 +914,82 @@ body {
     text-decoration: none;
     margin: 4px;
 }
-.div-one h1{
-    text-decoration: underline;
+
+/* Services pages: center content blocks to avoid a large empty right side */
+.services-body .nav-bar-links,
+.services-body .div-one,
+.services-body .section-content,
+.services-body .lawyers-section {
+    width: min(1200px, calc(100% - 48px));
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.services-body .content-one {
+    width: 100%;
+    max-width: none;
+}
+
+.services-body .content-one p,
+.services-body .section-content li,
+.services-body section small,
+.services-body .section-content h1 {
+    margin-left: 0;
+}
+
+.services-body .section-content ul {
+    padding-left: 24px;
+}
+
+/* Services pages: tighter typography/spacing for denser desktop layout */
+.services-body .div-one > h1,
+.services-body .section-content h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.services-body .content-one {
+    margin-bottom: 20px;
+}
+
+.services-body .content-one p {
+    font-size: 20px;
+    line-height: 1.55;
+    max-width: 90ch;
+}
+
+.services-body .section-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.services-body .section-content small {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.services-body .section-content li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 2px;
+}
+
+.services-body .lawyers-section {
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.services-body .lawyers-section div {
+    padding: 28px 16px;
+}
+
+.services-body .lawyers-section p {
+    font-size: 18px;
+}
+
 .content-one {
     width: 900px;
     margin-bottom: 35px;
@@ -941,7 +1014,6 @@ section small{
 .section-content h1{
     font-size: 50px;;
     color: rgb(15, 0, 127);
-    text-decoration: underline;
 }
 
 
@@ -1277,6 +1349,27 @@ section small{
     body, html { overflow-x:hidden; }
     .header-branding { flex-direction:row; }
     .nav-bar { flex-direction:row; }
+
+    .services-body .nav-bar-links,
+    .services-body .div-one,
+    .services-body .section-content,
+    .services-body .lawyers-section {
+        width: calc(100% - 24px);
+    }
+
+    .services-body .div-one > h1,
+    .services-body .section-content h1 {
+        font-size: 34px;
+    }
+
+    .services-body .content-one p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .services-body .lawyers-section div {
+        padding: 20px 12px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1317,6 +1410,17 @@ section small{
     body, html { overflow-x:hidden; }
     .header-branding { flex-direction:row; }
     .nav-bar { flex-direction:row; }
+
+    .services-body .div-one > h1,
+    .services-body .section-content h1 {
+        font-size: 28px;
+    }
+
+    .services-body .content-one p,
+    .services-body .section-content small,
+    .services-body .section-content li {
+        font-size: 15px;
+    }
     }
     @media screen and (max-width: 768px) {
   .content-one, .section-content, .aside-content {
