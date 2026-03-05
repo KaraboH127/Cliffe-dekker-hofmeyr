@@ -1049,7 +1049,7 @@ section small{
     margin-left: 25px;
 }
 .section-content h1{
-    font-size: 50px;;
+    font-size: 50px;
     color: rgb(15, 0, 127);
 }
 
@@ -1064,7 +1064,7 @@ section small{
    display: flex;
    flex-direction: row;
    justify-content: center;
-   grid-row: 1fr 1fr 1fr;
+   flex-wrap: wrap;
    clear: both;
    height: auto;
    text-align: center;
@@ -1084,7 +1084,7 @@ section small{
 .lawyers-section a{
     display: block;
     color: rgb(15, 0, 127);
-    margin: none;
+    margin: 0;
 }
 
 .lawyers-section .lawyers-title{
