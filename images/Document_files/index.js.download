@@ -1,0 +1,7 @@
+let fullName = `Karabo Hlabangane`;
+let age = 18;
+let student = false;
+
+document.getElementById(`p1`).textContent = `My name is ${fullName}.`
+document.getElementById(`p2`).textContent = `I am ${age} years old.`;
+document.getElementById(`p3`).textContent = `I am not a ${student}.`;
