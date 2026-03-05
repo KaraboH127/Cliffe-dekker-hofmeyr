@@ -1,0 +1,24 @@
+{
+  "name": "cliffe-dekker-hofmeyr-professional-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaraboH127/Cliffe-dekker-hofmeyr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KaraboH127/Cliffe-dekker-hofmeyr/issues"
+  },
+  "homepage": "https://github.com/KaraboH127/Cliffe-dekker-hofmeyr#readme",
+  "dependencies": {
+    "@sanity/client": "^7.16.0"
+  }
+}
