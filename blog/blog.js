@@ -59,6 +59,26 @@ const blogPosts = [
         excerpt: "The first genocide of the 20th century, perpetuated against the OvaHerero and Nama peoples in what is now Namibia, remains unresolved in international and domestic courts. The communities...",
         image: "../images/article-p6.jpg",
         link: "../pages-articles/article-6.html"
+    },
+    {
+        id: 7,
+        title: "The Constitutional Court Hears a Landmark Case on South Africa's International Law obligations as they pertain to the Rights of Asylum Seekers",
+        category: "ProBono",
+        date: "Feb 13, 2026",
+        author: "Onele Bulwana",
+        excerpt: "Yesterday, the Constitutional Court heard the matter of Scalabrini Centre of Cape Town and Another v Minister of Home Affairs and Others CCT 126-25 dealing with the constitutionality...",
+        image: "../images/articles-p7.jpg",
+        link: "../pages-articles/article-7.html"
+    },
+    {
+        id: 8,
+        title: "No person should be arbitrarily returned to a country to face persecution",
+        category: "ProBono",
+        date: "Feb 27, 2026",
+        author: "Samukelo Zhinga",
+        excerpt: "In recent times the global refugees and forced displacement landscape has gained tremendous attention amid growing global uncertainty and evolving geopolitical dynamics. These issues...",
+        image: "../images/articles-p8.jpg",
+        link: "../pages-articles/article-8.html"
     }
 ];
 
@@ -131,7 +151,8 @@ function capitalizeCategory(category) {
         employment: "Employment Law",
         environmental: "Environmental Law",
         competition: "Competition Law",
-        Banking: "Banking, Finance & Projects"
+        Banking: "Banking, Finance & Projects",
+        ProBono: "Pro Bono & Human Rights"
     };
     return categories[category] || category;
 }
