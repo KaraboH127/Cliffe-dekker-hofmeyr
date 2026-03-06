@@ -65,3 +65,15 @@ filterButtons.forEach((button) => {
 // Ensure initial state is shown
 const activeButton = document.querySelector('.filter-btn.active');
 applyFilter(activeButton ? activeButton.dataset.filter : 'all');
+
+
+
+
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none'
+            }
