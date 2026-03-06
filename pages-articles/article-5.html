@@ -16,8 +16,9 @@
         <script src="https://kit.fontawesome.com/66a555d40f.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
-            <ul>
+            <nav>
+              <ul class="sidebar">
+                <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-x"></i></a></li>
                 <li><a href="../index.html" class="nav-logo-link"><img src="../images/CDH-logo.jpeg" alt="Cliffe Dekker Hofmeyr logo" class="nav-logo"></a></li>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../About.html">About</a></li>
@@ -25,6 +26,17 @@
                 <li><a href="../lawyers/firm-leadership.html">Lawyers</a></li>
                 <li><a href="../blog/blog.html">Articles</a></li>
                 <li><a href="../contact.html">Contact</a></li>
+            </ul>
+
+            <ul>
+                 <li><a href="../index.html" class="nav-logo-link"><img src="../images/CDH-logo.jpeg" alt="Cliffe Dekker Hofmeyr logo" class="nav-logo"></a></li>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="../About.html">About</a></li>
+                <li class="hideOnMobile"><a href="../Services.html">Services</a></li>
+                <li class="hideOnMobile"><a href="../lawyers/firm-leadership.html">Lawyers</a></li>
+                <li class="hideOnMobile"><a href="../blog/blog.html">Articles</a></li>
+                <li class="hideOnMobile"><a href="../contact.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
         <hr>
@@ -186,5 +198,17 @@
                 <a href="https://za.linkedin.com/company/cliffe-dekker-hofmeyr" target="_blank noopener"><i class="fa-brands fa-square-linkedin"></i></a>
                 <a href="https://www.facebook.com/CDHLegal/" target="_blank noopener" ><i class="fa-brands fa-square-facebook"></i></a>
         </footer>
+         <script>
+
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none'
+            }
+    
+         </script>  
     </body>
 </html>
